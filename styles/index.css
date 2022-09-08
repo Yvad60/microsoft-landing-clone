@@ -40,7 +40,7 @@ header nav li a:hover {
   background-color: #0067b8;
   color: white;
   text-align: center;
-  padding: 1rem 0 1rem 0;
+  padding: 1.2rem 0 1.2rem 0;
   font-weight: 500;
 }
 
@@ -48,12 +48,8 @@ header nav li a:hover {
   margin: 0 6rem 0 6rem;
 }
 
-.hero {
-  background-color: #f2f2f2;
-}
 .hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  position: relative;
 }
 
 .hero-container img {
@@ -61,15 +57,94 @@ header nav li a:hover {
 }
 
 .hero-text {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 0;
+  max-width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80%;
   justify-self: center;
-  gap: 16px;
+  gap: 1.5rem;
 }
 
+.hero-text h1 {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.hero-text div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text button {
+  padding: 0.7rem;
+  background-color: #0067b8;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-text div p {
+  color: #0067b8;
+  font-size: 16px;
+}
 .services {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+.services div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.services div a {
+  color: #0067b8;
+  font-weight: 500;
+}
+
+.services div img {
+  align-self: center;
+  width: 22%;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+.products img {
+  width: 100%;
+}
+
+.products h2 {
+  font-size: 1.6rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.products p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.products div a {
+  padding-top: 1.5rem;
+  display: inline-block;
+  color: #0067b8;
+  text-decoration: none;
+  font-weight: 500;
 }
