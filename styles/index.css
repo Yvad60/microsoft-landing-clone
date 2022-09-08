@@ -56,11 +56,10 @@ header nav li a:hover {
   width: 100%;
 }
 
-.hero-text {
+.overlay {
   position: absolute;
   top: 50%;
   bottom: 50%;
-  right: 0;
   max-width: 30%;
   display: flex;
   flex-direction: column;
@@ -70,7 +69,10 @@ header nav li a:hover {
   gap: 1.5rem;
 }
 
-.hero-text h1 {
+.hero-text {
+  right: 0;
+}
+.overlay h1 {
   font-weight: 500;
   font-size: 2.2rem;
 }
@@ -81,7 +83,7 @@ header nav li a:hover {
   align-items: center;
 }
 
-.hero-text button {
+.overlay button {
   padding: 0.7rem;
   background-color: #0067b8;
   border: 0;
@@ -92,7 +94,7 @@ header nav li a:hover {
   cursor: pointer;
 }
 
-.hero-text div p {
+.overlay div p {
   color: #0067b8;
   font-size: 16px;
 }
@@ -118,33 +120,80 @@ header nav li a:hover {
   width: 22%;
 }
 
-.products {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.5rem;
   margin-top: 5rem;
 }
 
-.products img {
+.grid-container img {
   width: 100%;
 }
 
-.products h2 {
+.grid-container h2 {
   font-size: 1.6rem;
   margin-top: 5px;
   font-weight: 500;
 }
 
-.products p {
+.grid-container p {
   margin-top: 10px;
   font-size: 15px;
   line-height: 1.5rem;
 }
 
-.products div a {
+.grid-container div a {
   padding-top: 1.5rem;
   display: inline-block;
   color: #0067b8;
   text-decoration: none;
   font-weight: 500;
+}
+.discount {
+  margin-top: 6rem;
+  position: relative;
+}
+.discount img {
+  width: 100%;
+}
+.description-text {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  justify-self: center;
+  gap: 1.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.business {
+  margin-top: 0;
+}
+
+.coco {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.coco img {
+  width: 100%;
+}
+
+.nana {
+  margin-left: 2rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: white;
 }
